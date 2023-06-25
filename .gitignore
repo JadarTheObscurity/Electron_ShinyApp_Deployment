@@ -1,3 +1,8 @@
 node_modules
+<<<<<<< HEAD
 
 out/
+=======
+ElectronShinyApp
+package-lock.json
+>>>>>>> 9a200bc67040375e29083bce71aae517b88398a5
