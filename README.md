@@ -1,3 +1,9 @@
+# Github action
+[Using github action to auto build](https://github.com/jsoma/action-electron-forge)
+
+
+
+
 # PLEASE USE THE NEWER VERSION OF THIS REPO FOUND HERE: [ColumbusCollaboratory/photon](https://github.com/ColumbusCollaboratory/photon)
 # ----------------------------------------------
 
