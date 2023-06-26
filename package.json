@@ -1,13 +1,15 @@
 {
   "name": "electron-quick-start",
-  "version": "1.0.0",
+  "productName": "Shiny Electron App",
+  "version": "1.0.1",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=cc.ico --out=ElectronShinyApp",
     "package-win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --icon=cc.ico --out=ElectronShinyApp --version-string.CompanyName=ColumbusCollaboratory --version-string.FileDescription=CE --version-string.ProductName=\"Shiny Electron App\"",
-    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds",
+    "dist": "electron-builder"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,7 +19,7 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "author",
   "license": "CC0-1.0",
   "devDependencies": {
     "@electron-forge/cli": "^6.2.1",
@@ -31,6 +33,9 @@
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0"
+  },
+  "build" :{
+    "appId": "com.NYCU.sequencer"
   },
   "config": {
     "forge": {
