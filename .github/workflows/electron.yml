@@ -1,7 +1,10 @@
 # name of your github action
 name: CI
 # this will help you specify where to run 
-on: push
+on: 
+  push:
+    branches:
+      - master
 # this is where the magic happens, each job happens in parallel btw
 jobs:
   build_on_mac:
@@ -9,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
       with:
-        ref: electron
+        ref: master
     - uses: actions/setup-node@master
       with:
         node-version: 10.16
